@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="styleboot.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">  <!--For custom google font-->
+    <link rel="icon" href="images1/icon.ico">
+    <title>Team Anant</title>
+    
+
+    <!--For title bar color-->
+    <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="black">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="black">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  </head>
+
+  <style>
+  
+    @media(max-width: 768px)
+    {
+      h1
+      {
+        font-weight: 100;
+        font-size: 10vw;
+        font-family: 'Raleway';
+        text-align: center;
+        padding-left: 5%;
+        padding-right:5%;
+      }
+
+      p
+      {
+        font-size: 4vw;
+        text-align: justify;
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+
+      .bg-img
+      {
+      	background-image: url("moon-s.jpg");
+      	max-width: 768px;
+  		background-size: 100%;
+ 		min-height: 1000px;
+      }
+    }
+
+    @media(min-width: 768px)
+    {
+       h1
+       {
+        font-weight: 100;
+        font-size: 5vw;
+        font-family: 'Raleway';
+        padding-left: 10%;
+        padding-right: 10%;
+       }
+
+       p
+       {
+        font-size: 1.6vw;
+        text-align: justify;
+        padding-left: 10%;
+        padding-right: 10%;
+       }
+
+       .bg-img
+       {
+       	background-image: urL("moon.jpg");
+       	max-width: 1920px; /* YOUR BG MAX SIZE */
+  		background-size: 100%;
+  		min-height: 1000px;
+       }
+    }
+  </style>
+  
+  <!--Copy as it is for evry page. Contains bgcolor and navbar-->
+  <body class = "coolfont bg-img">
+    <nav class = "navbar-inverse navbar-default navbar-fixed-top">
+      <div class = "container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class = "nav navbar-nav">
+          <li><a href = "home.html">Home</a></li>
+          <li><a href = "updates.html">Updates</a></li>
+          <li><a href = "papers.html">Publications</a></li>
+          <li class = "dropdown">
+            <a class = "dropdown-toggle" data-toggle = "dropdown" href = "subsystems">Subsystems</a>
+            <ul class = "dropdown-menu">
+              <li><a href = "subsystems.html#pal">PAYLOAD</a></li>
+              <li><a href = "subsystems.html#obc">OBC</a></li>
+              <li><a href = "subsystems.html#eps">EPS</a></li>
+              <li><a href = "subsystems.html#adcs">ADCS</a></li>
+              <li><a href = "subsystems.html#mech">MECH</a></li>
+              <li><a href = "subsystems.html#tele">TELE</a></li>
+            </ul>
+          </li> 
+          <li><a href = "team.html">Team</a></li>
+          <li><a href = "sponsor.html">Sponsor</a></li>
+          <li><a href = "contact.html">Contact Us</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+  <!--Till here-->
+
+  <img src = "images1/a.png" class = "anant-ico center-block" id = "obc">
+
+  <br id = "pal"><br><br>
+  <h1>Payload Subsytem</h1>
+  <br>
+  <p>
+  Hyperspectral remote sensing, also known as imaging spectroscopy, is a relatively new technology that is currently being investigated by researchers and scientists with regard to the detection and identification of minerals, terrestrial vegetation, and man-made materials and backgrounds. The primary payload of our satellite is a hyperspectral camera which is yet to be used as a payload for nanosatellites due to its conventional models requiring intensive power and processing capabilities. Hyperspectral imaging provides a great amount of spectral information to identify and distinguish between different spectrally similar materials. It has a potential of more accurate and more detailed information extraction than what is possible with other types of remotely sensed data. The camera captures a part of the electromagnetic spectrum from 400-1000nm (visible – near infrared). The camera's concentric design spectrometer with very fine resolution helps the existing solid state imaging technology to take images from the wavebands which were previously not possible on a single platform. The data from the payload will be used for water quality monitoring in the region. It will take the images in different wavebands and after different levels of processing, provide the concentrations of different materials such as TSS (Total Suspended Solids) and chlorophyll-a, diffuse attenuation coefficient, etc.
+  </p>
+
+  <h1>On Board Computer</h1>
+  <br>
+  <p>
+  The On Board Computer is the main string puller, controlling and coordinating all the other subsystems on the satellite. It regularly collects various housekeeping data from the other subsystems and accordingly switches between various modes of operations. The OBC in our case has a System-on-Chip(SoC) based design, consisting of a Field Programmable Gate Array(FPGA) and a microprocessor. An SoC being inherently efficient, meets the power requirements associated with a nanosatellite. While the microprocessor will be busy coordinating among the subsystems, the hyperspectral image compression algorithm will be implemented on the FPGA. A hyperspectral image compression algorithm is required because of the large sizes of hyperspectral images and the constraint placed on the telemetry subsystem in terms of transferring huge amounts of data.
+  </p>
+
+  
+  <br  id = "eps"><br><br>
+  <h1>Electrical Power Subsystem</h1>
+  <br>
+  <p>
+  Electrical Power System is responsible for harnessing energy from the solar panels, storing extra power in the batteries and conditioning it to supply different subsystems with necessary voltages and currents with required precision. Since, all of satellites functionality depends on it, robustness and redundancy is the dominating characteristic while designing an Electrical Power System. Apart from these primary functions, it is also responsible for protecting components from electrical spikes caused by space effects like Single Event Upsets (SEUs) caused by solar flares or radiation from Van Allen Belt. Since EPS is the first subsystem to be turned on after the satellite, it is also responsible for booting up OBC. Our satellite has a hyperspectral camera, an intensive processor and necessity to transfer huge amounts of data, making effective management of energy a categorical priority.
+  </p>
+
+  <br id = "adcs"><br><br>
+  <h1>Attitude Determination And Control Subsystem</h1>
+  <br>
+  <p>
+  The Attitude Determination and Control System (ADCS) has the crucial job of controlling and stabilizing the satellite against external disturbances. It also has to perform various maneuvers to point the maximum surface area towards the sun, or to track the ground station for communication purposes or even actively stabilize the satellite while taking the images of the earth. The system can further be divided into two subsystems – the attitude determination system (ADS) and the attitude control system (ACS). The ADS consists of the sunsensors and magnetometers as reference sensors and an IMU as an inertial sensor to obtain the attitude knowledge using EQUEST and EKF as determination and estimation algorithms. The magnetorquers will be used to detumble the satellite as a part of ACS. The reaction wheels along with the magnetorquers will be used for advanced control algorithms to actively orient and control the satellite during image acquisition, communication and sun tracking.
+  </p>
+
+
+  <br id = "mech"><br><br>
+  <h1>Structural And Thermal Subsystem</h1>
+  <br>
+  <p>
+  The structural subsystem deals with the design and analysis of the main structure of the satellite by proper allocation of dimensions and space to other subsystem components, keeping in mind the  constraints each of them poses. It plays an important role during launch as it has to withstand the static and dynamic loading and the vibrations induced. It also protects the internal components against the harsh space environment in orbit. The dimensions and weight of the hyperspectral imaging payload, makes the design of the satellite a challenge to keep it within the constraints as specified by NASA.
+The thermal subsystem is responsible for maintaining the temperature of the components within their specified operational limits. The temperature control in our satellite is achieved mostly by using passive methods, such as Multi Layered Insulation (MLI), surface finishes, paints, etc., with an active thermal
+control using heaters for the battery as it is the most temperature sensitive component.
+  </p>
+
+  <br id = "tele"><br><br>
+  <h1>Telemetry and Ground Station</h1>
+  <br>
+  <p>
+“Never let a satellite go incommunicado” is the motto around which the communications team works. The system is responsible for setting up a reliable connection between the satellite and the ground station in the UHF and VHF amateur bands. It consists of a beacon and a data telemetry system. The
+beacon basically advertises its humble existence to the world and is used for transmitting some mission critical data (some of the housekeeping data). The data downlinking system is tasked with transmitting the payload data and all the housekeeping data. Along with this, the telemetry system receives
+commands and updates sent from the ground station. The ground station server will run a software for Tracking the satellite and control a rotor accordingly, to orient the antennae. The client connected to the server will be able to remotely operate it. A good number of satellites have been launched which have successfully established connections with the ground station. Well, here's the rub in our case. Firstly, the size of a hyperspectral image is unconventionally large to be transmitted from a nanosatellite. Secondly, owing to the low earth orbit into which the satellite will be deployed, each satellite pass will last for about 6-9 minutes and there will be about 3 passes a day. This calls for a high data rate of transmission which in turn increases power consumption, increases the bandwidth occupancy and decreases the reliability of connection.
+  </p>
+
+  
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

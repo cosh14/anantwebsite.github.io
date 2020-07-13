@@ -1,0 +1,106 @@
+	.coolfont
+	{
+		font-family: raleway;
+		background-color: black;
+		color: white;
+	}
+
+	.bg-img
+	{
+		background-repeat: no-repeat;
+	 	background-size: cover;
+	}
+
+	.navbar-inverse
+	{
+		background-color: black;
+		border: none;
+		text-align: center;
+		font-size: 1.5em;
+	}
+
+	.dropdown-menu
+	{
+		background-color: black;
+		color: white;
+		border: none;
+		font-weight: ;
+		text-align: center;
+		font-size: 1em;
+
+	}
+
+	.dropdown-menu>li>a:hover
+	{
+		color:#555;
+		background-color: black;
+	}
+	.dropdown-menu>li>a, .dropdown-menu
+	{
+  		background-color: black;
+    	color: white;
+    	padding-top: 10px;
+  	}
+
+  	.myimg
+	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+		height: 60%;
+	}
+
+	.anant-ico
+    {
+      width:240px;
+      height: 250px;
+      margin-top: 10vw;
+      margin-bottom: 10vw;
+    }
+
+@media(min-width: 768px)
+  	{
+  		p
+  		{
+  			font-size: 1.4em;
+  			text-align: justify;
+  		}
+
+  		.hometext
+      	{
+       	 	text-align: justify;
+       	 	padding-left: 70px;
+        	padding-right: 70px;
+        	line-height: 150%;
+        	font-size: 1.89em;
+      	}
+  	}
+
+ @media(max-width: 768px)
+  	{
+  		p
+  		{
+  			font-size: 1.2em;
+  			text-align: justify;
+  		}
+
+  		h1
+  		{
+  			text-align: center;
+  			font-size: 1.9em;
+  		}
+  		
+  		.navbar-toggle
+  		{
+  			border: none;
+  		}
+  		.hometext
+      	{
+        	text-align: justify;
+        	padding-left: 10px;
+        	padding-right: 10px;
+        	line-height: 150%;
+        	font-size: 1.3em;
+      	}
+  	}
